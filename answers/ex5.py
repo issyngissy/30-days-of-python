@@ -31,21 +31,19 @@ ethereum_count = int(0)
 litecoin_count = int(0)
 while current_balance > btc:
     current_balance -= btc
-    if current_balance >= 0:
-        btc_count += 1
+    btc_count += 1
         
     
 
-while current_balance > ethereum_count:
+while current_balance > ethereum:
     current_balance -= ethereum
-    if current_balance >= 0: 
-        ethereum_count += 1
+    print(current_balance)
+    ethereum_count += 1
         
 
 while current_balance > litecoin:
     current_balance -= litecoin
-    if current_balance >= 0: 
-        litecoin_count += 1
+    litecoin_count += 1
         
 
 total_crypto_spend = btc_count * btc + ethereum_count * ethereum + litecoin_count * litecoin
