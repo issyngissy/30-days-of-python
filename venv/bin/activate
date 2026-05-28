@@ -41,13 +41,8 @@ VIRTUAL_ENV="/Users/issyng/Documents/Coding/30-days-of-python/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
-if [ -d "$VIRTUAL_ENV" ]; then
-    PATH="$VIRTUAL_ENV/__VENV_BIN_NAME__:$PATH"
-else
-    echo "Error: Path '$VIRTUAL_ENV' does not exist."
-    exit 1
-fi
-
+PATH="$VIRTUAL_ENV/bin:$PATH"
+export PATH
 
 # unset PYTHONHOME if set
 # this will fail if PYTHONHOME is set to the empty string (which is bad anyway)
