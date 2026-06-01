@@ -18,7 +18,7 @@ btc = 75000
 ethereum = int(2777)
 litecoin = int(70)
 
-current_balance = int(7548938)
+current_balance = int(303000)
 
 btc_count = int(0)
 ethereum_count = int(0)
